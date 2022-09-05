@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>AC Desarrollador de Software</title>
+</head>
+
+<body>
+    <!--SECCION DE INICIO-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <img class="gameicon" src="img/Iconos Habilidades/game-control.png" alt="">
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#habilidades" onclick="seleccionar(this)">HABILIDADES</a></li>
+                            <li><a href="#experiencias" onclick="seleccionar(this)">EXPERIENCIA</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!--Iconos del menu responsive-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!--Iconos de las redes sociales-->
+                    <div class="redes">
+                        <a target="_blank" href="http://www.linkedin.com/in/adrian-curet-ortiz"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a target="_blank" href="https://github.com/Adhoper"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href="https://instagram.com/adrian_curet?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+
+                </div>
+            </header>
+
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Adrian Curet</span>, Desarrollador de Software</h2>
+                <p class="descripcion">Soy un chico programador dispuesto a dar lo mejor de si y seguir aprendiendo y mejorando
+                    mi desarrollo profesional.
+                </p>
+                    <a href="#portafolio">Ir al Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/Fondos y Fotos/Sobremi.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span>Adrian Curet</span></h2>
+            <h3>Desarrollador de Software</h3>
+            <p>Desde pequeño siempre me ha interesado la tecnología, y la mejor decisión que tome fue convertirme en un programador.
+                Me encanta la programación en general pero mas la Web y la de VideoJuegos que son en las que me desempeño mejor!
+            </p>
+            <p>Tengo conocimientos de varios lenguajes de programación como JavaScript y C#, aplicandome mas en el desarrollo Web
+                con ASP .Net y .Net Core.
+            </p>
+            <a href="Curriculum/adriancv.pdf" download="adriancuretcv.pdf">Descargar CV</a>
+        </div>
+    </section>
+
+    <!--SECCION PORTAFOLIO-->
+    <section  id="portafolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img class="proyecto1" src="img/Fondo 1.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img class="proyecto2" src="img/Proyectos/2.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img class="proyecto3" src="img/Proyectos/CRUDREACT JS.png" alt="">
+                <div class="info">
+                    <h4>Listado de Contactos</h4>
+                    <p>CRUD con ASP .Net Core y React.JS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION MODAL-->
+    <section class="modal" id="modalp1">
+        <div class="modal_container">
+            <img src="img/Proyectos/CRUDREACT JS Recortado.png"  class="modal_img" alt="">
+            <h2 class="modal_tittle">Crud con ASP NET</h2>
+            <p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime illo quasi natus porro temporibus 
+                odio, iusto voluptatibus suscipit ullam accusamus placeat perspiciatis animi aliquam minus obcaecati ex debitis saepe.</p>
+                <div>
+                    <a href="https://github.com/Adhoper" target="_blank" class="modal_red" ><i class="fa-brands fa-github"></i></a>
+                    <a href="" class="modal_close" id="m1">Cerrar</a>
+                </div>
+        </div>
+    </section>
+
+    <section class="modal" id="modalp2">
+        <div class="modal_container">
+            <img src="img/Proyectos/CRUDREACT JS Recortado.png"  class="modal_img" alt="">
+            <h2 class="modal_tittle">Crud con ASP NET</h2>
+            <p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime illo quasi natus porro temporibus 
+                odio, iusto voluptatibus suscipit ullam accusamus placeat perspiciatis animi aliquam minus obcaecati ex debitis saepe.</p>
+                <div>
+                    <a href="https://github.com/Adhoper" target="_blank" class="modal_red"><i class="fa-brands fa-github"></i></a>
+                    <a href="" class="modal_close" id="m2">Cerrar</a>
+                </div>
+        </div>
+    </section>
+    
+    <section class="modal" id="modalp3">
+        <div class="modal_container">
+            <img src="img/Proyectos/CRUDREACT JS Recortado.png"  class="modal_img" alt="">
+            <h2 class="modal_tittle">Listado de Contactos</h2>
+            <p class="modal_paragraph">Este es un listado de contactos tipo CRUD el cual su funcion es guardar o almacenar informacion de personas para recordar
+                su correo electronico o numero de telefono, este fue realizado con las tecnologias de <b>ASP .Net Core y REACT.JS</b>
+            </p>
+
+            <div>
+                <a href="https://github.com/Adhoper" target="_blank" class="modal_red"><i class="fa-brands fa-github"></i></a>
+                <a href="" class="modal_close" id="m3">Cerrar</a>
+           </div>
+    </div>
+    </section>
+
+    <!--SECCION HABILIDADES-->
+    <section class="contenedor-habilidades" id="habilidades">
+        <h3 class="titulo-seccion">HABILIDADES</h3>
+        <div class="fila">
+            <div class="habilidad">
+                <img class="icono" src="img/Iconos Habilidades/HTML.png" alt="">
+                <h4>HTML</h4>
+            </div>
+            <div class="habilidad">
+                <img class="icono" src="img/Iconos Habilidades/CSharp.png" alt="">
+                <h4>C#</h4>
+            </div>
+            <div class="habilidad">
+                <img class="icono" src="img/Iconos Habilidades/CSS.png" alt="">
+                <h4>CSS</h4>
+
+            </div>
+            <div class="habilidad">
+                <img class="icono" src="img/Iconos Habilidades/JS.png" alt="">
+                <h4>JavaScript</h4>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="habilidad">
+                <img class="icono" src="img/Iconos Habilidades/ASP NET.png" alt="">
+                <h4>ASP .NET</h4>
+
+            </div>
+            <div class="habilidad">
+                <img class="icono" src="img/Iconos Habilidades/Net Core.png" alt="">
+                <h4>.Net Core</h4>
+
+            </div>
+            <div class="habilidad">
+                <img class="icono" src="img/Iconos Habilidades/EFCORE.png" alt="">
+                <h4>EF Core</h4>
+
+            </div>
+            <div class="habilidad">
+                <img class="icono" src="img/Iconos Habilidades/SQL.png" alt="">
+                <h4>SQL Server</h4>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION EXPERIENCIA-->
+    <section class="contenedor-experiencias" id="experiencias">
+        <h3 class="titulo-seccion">EXPERIENCIA</h3>
+        <div class="fila">
+            <div class="experiencia">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>TDE Soluciones de Informatica</h4>
+                <hr>
+                <h5 class="experiencias-tag">Consultor DataWareHouse Junior</h5>
+                <p>En esta empresa me desempeñe en el area de desarrollo de Proyectos de Soluciones de Inteligencia de Negocios y
+                    el Desarrollo de Proyectos de Software.</p>
+            </div>
+            <div class="experiencia">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>XpertCode</h4>
+                <hr>
+                <h5 class="experiencias-tag">Programador Junior</h5>
+                <p>Aqui pude desempeñar mi labor como pasante en el Desarrollo de Paginas Web con WordPress.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION CONTACTO-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">CONTACTO</h3>
+        <div class="contenedor-form">
+            <form action="https://formsubmit.co/curetmicael16@gmail.com" method="POST">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad" name="name" id="nombre">
+                    <input type="text" placeholder="Email" class="input-mitad" name="email" id="email">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full" name="subject" id="tema">
+                </div>
+                <div class="fila">
+                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar" onclick="swal('Bien!', 'Se ha enviado', 'success')">
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </section>
+
+    <!--SECCION FOOTER-->
+    <footer>
+        <p>Todos los derechos reservados - 2022</p>
+        <p><i class="fa-solid fa-envelope"></i> Curetmicael16@gmail.com</p>
+        <div class="redes">
+            <a target="_blank" href="http://www.linkedin.com/in/adrian-curet-ortiz"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a target="_blank" href="https://github.com/Adhoper"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://instagram.com/adrian_curet?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+</html>
