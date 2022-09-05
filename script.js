@@ -31,9 +31,9 @@ function responsiveMenu(){
 //Abrir el Modal
 
 
-const openModal = document.querySelector('.proyecto1');
-const openModal2 = document.querySelector('.proyecto2');
-const openModal3 = document.querySelector('.proyecto3');
+const openModal = document.getElementById('proyecto1');
+const openModal2 = document.getElementById('proyecto2');
+const openModal3 = document.getElementById('proyecto3');
 
 const modal = document.getElementById("modalp1");
 const modal2 = document.getElementById("modalp2");
