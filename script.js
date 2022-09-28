@@ -79,3 +79,10 @@ closeModal.addEventListener('click',(e)=>{
     e.preventDefault();
     modal3.classList.remove('modal--show');
 })*/
+
+function Confirmacion(){
+    swal("El Mensaje se ha enviado", {
+        buttons: false,
+        timer: 1000,
+      });
+}
