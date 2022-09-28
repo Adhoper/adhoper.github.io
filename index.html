@@ -229,19 +229,17 @@
         <div class="contenedor-form">
             <form action="https://formsubmit.co/curetmicael16@gmail.com" method="POST">
                 <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo" class="input-mitad" name="name" id="nombre">
-                    <input type="text" placeholder="Email" class="input-mitad" name="email" id="email">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad" name="name" id="nombre" required>
+                    <input type="text" placeholder="Email" class="input-mitad" name="email" id="email" required>
                 </div>
                 <div class="fila">
-                    <input type="text" placeholder="Tema..." class="input-full" name="subject" id="tema">
+                    <input type="text" placeholder="Tema..." class="input-full" name="subject" id="tema" required>
                 </div>
                 <div class="fila">
-                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full"></textarea>
+                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full" required></textarea>
                 </div>
-                <input type="submit" value="Enviar Mensaje" class="btn-enviar" onclick="swal('Bien!', 'Se ha enviado', 'success')">
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
 
-                <input type="hidden" name="_next" value="adhoper.github.io">
-                <input type="hidden" name="_captcha" value="false">
             </form>
         </div>
     </section>
