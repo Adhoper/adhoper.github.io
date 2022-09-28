@@ -238,7 +238,10 @@
                 <div class="fila">
                     <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full" required></textarea>
                 </div>
-                <input type="submit" value="Enviar Mensaje" class="btn-enviar" onclick="Confirmacion()">
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar" onclick="swal('El Mensaje se ha enviado', {
+                    buttons: false,
+                    timer: 1000,
+                  })">
 
                 <input type="hidden" name="_next" value="https://adhoper.github.io">
                 <input type="hidden" name="_captcha" value="false">
